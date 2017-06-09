@@ -2,6 +2,8 @@ FROM joaolboing/apache-php5
 
 ENV DEBIAN_FRONTEND=newt
 
+ADD apache2.conf /etc/apache2/apache2.conf
+
 RUN apt-get update && \
 apt-get install -y php5-xdebug multitail screen && \
 
